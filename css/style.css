@@ -121,7 +121,8 @@ a:visited{
 
 }
 
-@media screen and (print) {
+@media print{
+/* @media screen and (min-width: 1000px){ */
     header{
         display: flex;
         flex-direction: column;
@@ -131,21 +132,20 @@ a:visited{
     }
 
     nav{
-
-        justify-content: space-around;
+        justify-content: flex-end;
         width: 100%;
     }
 
     .nav_links {
         display: flex; 
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-end;
     }
 
     .pricing{
         display: flex;
         flex-flow: row nowrap;
-        align-items: flex-end;
+        align-self: baseline;
     }
 
     .card{
@@ -156,5 +156,9 @@ a:visited{
 
     .gallery{
         display: none;
+    }
+    
+    .primt{
+        display: inline;
     }
 }
